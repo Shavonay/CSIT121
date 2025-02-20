@@ -1,0 +1,32 @@
+body {
+    background-color: #E3F2FD;
+    color: #37474F;
+    font-family: arial, sans-serif;
+}
+h1 {
+    color: #6D597A;
+}
+h2, h3{
+    color:#9A8C98;
+}
+p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+ol {
+   line-height: 1.6; 
+}
+a {
+   color: #9A8C98;
+   line-height: 1.6;
+}
+#highlight {
+    background-color:#D8BFD8;
+    font-weight: bold; 
+    padding: 10px;
+}
+.importance {
+    color:#6D597A;
+    font-weight: bold;
+}
+
