@@ -1,0 +1,20 @@
+div {
+    height: 200px;
+    width: 200px;
+    border: 20px;
+    border-color: pink;
+    background-color: rgb(32, 102, 163);
+    padding: 20px;
+    margin:20px;
+}
+
+
+#box1 {
+    position: absolute;
+    top: 50px;
+    left: 325px;
+}
+
+#box2 {
+    float: right;
+}
