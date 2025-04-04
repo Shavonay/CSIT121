@@ -1,0 +1,146 @@
+body {
+    background-color: #fff0f5;
+    color: #37474F;
+    font-family: Verdana, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1 {
+    color: #333;
+    text-align: center;
+    margin: 30px 0 10px;
+    font-size: 2em;
+  }
+  
+  h2 {
+    color: #333;
+    text-align: center;
+    margin-top: 40px;
+  }
+  
+  nav {
+    background-color: #f7cde2;
+    padding: 12px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    color: #37474F;
+    font-weight: bold;
+    font-size: 1.1em;
+    padding: 8px 16px;
+    border-radius: 6px;
+    transition: background-color 0.3s;
+  }
+  
+  .nav-links li a:hover {
+    background-color: #ffe0f0;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  table {
+    margin: 0 auto;
+    width: 95%;
+    border-collapse: collapse;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    vertical-align: middle;
+  }
+  
+  img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto 5px auto;
+  }
+  
+  .tier-s {
+    background-color: #ffdee9;
+  }
+  
+  .tier-a {
+    background-color: #d0f0c0;
+  }
+  
+  .tier-b {
+    background-color: #d8f3f5;
+  }
+  
+  .tier-c {
+    background-color: #fef9c7;
+  }
+  
+  .tier-d {
+    background-color: #ffd6a5;
+  }
+  
+  form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    text-align: left;
+  }
+  
+  input, select, textarea, button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-size: 1em;
+  }
+  
+  button {
+    background-color: #f8a5c2;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+  }
+  
+  button:hover {
+    background-color: #e88bae;
+  }
+  
+  footer {
+    background-color: #f7cde2;
+    color: #37474F;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 40px;
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.05);
+    font-family: Verdana, Tahoma, sans-serif;
+  }
+  
