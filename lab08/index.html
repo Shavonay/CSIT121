@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visual Media in Web Design</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <main>
+    <header> 
+        <h1>Visual Media In Web Design</h1>
+        <div id="myNav" class="overlay" role="navigation" aria-label="Main navigation">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <a href="index.html">Home</a>
+                <a href="gif.html">GIF</a>
+                <a href="jpg.html">JPG</a>
+                <a href="png.html">PNG</a>
+             </div>
+        </div>
+        <span class="menu-button" onclick="openNav()">&#9776; Menu</span>
+    </header>
+    <section>
+        <h2>Introduction</h2>
+        <p>Visual media is an important aspect of web design. Images help to improve user engagement and experience and make websites visually appealing. This website will showcase three examples of common web graphic formats.</p>
+        <p>The image file types explored on this website are GIF, JPG, and PNG.</p>
+        <img src="images/catworking.gif" alt="Cat typing on a laptop.">
+        <h2>Sources</h2>
+        <ul>
+            <li>Background image is from  <a href="https://unsplash.com/photos/pink-painted-brick-wall-wZz5YUhP1HI">UNSPLASH</a></li>
+            <li>Cat working GIF is from  <a href="https://giphy.com/gifs/reddit-doing-lJNoBCvQYp7nq">GIPHY</a></li>
+        </ul>
+    </section>
+    <footer>
+        <p>&copy; 2025 Shavonay Morgan. All rights reserved.</p>
+    </footer>
+</main>
+<script>
+    function openNav() {
+      document.getElementById("myNav").style.width = "100%";
+    }
+  
+    function closeNav() {
+      document.getElementById("myNav").style.width = "0%";
+    }
+  </script>
+  
+</body>
+</html>
