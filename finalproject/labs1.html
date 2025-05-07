@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Labs 1–5</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Labs 1-5</h1>
+    <span class="menu-button" onclick="openNav()">&#9776; Menu</span>
+  </header>
+  <div id="myNav" class="overlay" role="navigation" aria-label="Main navigation">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="overlay-content">
+      <a href="index.html">Home</a>
+      <a href="labs1.html">Labs 1–5</a>
+      <div class="dropdown">
+        <a href="labs2.html" class="dropdown-toggle" onclick="toggleDropdown(event)">Labs 6–10 ▾</a>
+        <div class="dropdown-content">
+          <a href="labs2.html#lab-summary">Lab Skills Summary</a>
+        </div>
+      </div>
+        <a href="reflection.html">Lessons Learned</a>
+    </div>
+  </div>  
+  <main>
+    <section class="labs-intro">
+        <h2>My Web Design Labs (1-5)</h2>
+        <p>These labs guided me through the basics of web development, from editing HTML and writing semantic structures to applying CSS and building responsive layouts. Check them out below!</p>
+      </section>      
+    <div class="labs-grid">
+      <div class="lab-card">
+        <h3>Lab 1: Web Publishing</h3>
+        <p>Edited and published my first HTML page using GitHub and validation tools.</p>
+        <a href="https://shavonay.github.io/CSIT121/lab01/aboutme.html">View Lab 1</a>
+      </div>
+      <div class="lab-card">
+        <h3>Lab 2: HTML Basics</h3>
+        <p>Coded a full blog page using HTML tags like header, article, and lists.</p>
+        <a href="https://shavonay.github.io/CSIT121/lab02/index.html">View Lab 2</a>
+      </div>
+      <div class="lab-card featured">
+        <h3>Lab 3: CSS Basics</h3>
+        <p>Styled my blog page using external CSS and added a second reflection.</p>
+        <a href="https://shavonay.github.io/CSIT121/lab03/index.html">View Lab 3</a>
+      </div>
+      <div class="lab-card">
+        <h3>Lab 4: Visual Media</h3>
+        <p>Built a four-page site with different image types and used CSS for layout and backgrounds.</p>
+        <a href="https://shavonay.github.io/CSIT121/lab04/index.html">View Lab 4</a>
+      </div>
+      <div class="lab-card">
+        <h3>Lab 5: Layout</h3>
+        <p>Updated my blog to work better on phones and desktops, and added links to jump between posts.</p>
+        <a href="	
+        https://shavonay.github.io/CSIT121/lab05/index.html">View Lab 5</a>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <p>&copy; 2025 Shavonay Morgan. All rights reserved.</p>
+  </footer>
+  <script>
+    function openNav() {
+      document.getElementById("myNav").style.width = "100%";
+    }
+  
+    function closeNav() {
+      document.getElementById("myNav").style.width = "0%";
+    }
+  
+    function toggleDropdown(e) {
+      const content = e.target.nextElementSibling;
+      if (!content.classList.contains("show")) {
+        e.preventDefault();
+        document.querySelectorAll('.dropdown-content').forEach(el => el.classList.remove('show'));
+        content.classList.add("show");
+      }
+    }
+  </script> 
+</body>
+</html>

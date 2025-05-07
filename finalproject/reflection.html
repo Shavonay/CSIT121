@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reflection</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Lessons Learned</h1>
+    <span class="menu-button" onclick="openNav()">&#9776; Menu</span>
+  </header>
+  <div id="myNav" class="overlay" role="navigation" aria-label="Main navigation">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="overlay-content">
+      <a href="index.html">Home</a>
+      <a href="labs1.html">Labs 1–5</a>
+      <div class="dropdown">
+        <a href="labs2.html" class="dropdown-toggle" onclick="toggleDropdown(event)">Labs 6–10 ▾</a>
+        <div class="dropdown-content">
+          <a href="labs2.html#lab-summary">Lab Skills Summary</a>
+        </div>
+      </div>
+        <a href="reflection.html">Lessons Learned</a>
+    </div>
+  </div>  
+  <main>
+    <section class="before-after">
+      <h2>Reflection on the Final Project</h2>
+      <p>This final project helped me realize how much I have improved in web development. While I did not need to change any of my original labs, putting them all together into one organized and styled website still took time and effort. I focused on keeping the design consistent across pages and making sure the layout worked well on different screen sizes. To test the layout, I used the Inspect tool in Chrome and also viewed the site on my phone to make sure the content adapted to the screen size of the device.</p>
+      <p>Before this class, my only web experience was using Google Sites in a previous course. Building a site completely from scratch was a challenge, but it was also more rewarding because it gave me full control over the structure and design. Writing my own HTML and CSS helped me understand how real websites are built. I now feel more confident in my ability to create and troubleshoot my websites.</p>
+      <p>When I compare my first lab to my final lab, I can see the progress that I made. My code is more organized, the layouts are cleaner, and I have learned to use proper tags and accessibility practices. The visual structure of my pages has improved, and the content is easier to navigate. The screenshots below highlight my growth over the semester and show how much I have improved in creating websites.</p>
+    </section>
+    <section class="before-after">
+      <h2>Before vs. After</h2>
+      <p>Below is a comparison of one of my first labs and my final lab.</p>
+      <div class="image-comparison">
+        <figure>
+          <img src="images/lab1.png" alt="Screenshot of early Lab 1 with basic HTML layout">
+          <figcaption>First Lab (Before)</figcaption>
+        </figure>
+        <figure>
+          <img src="images/lab10.png" alt="Screenshot of final Lab 10 showing structured layout with styles">
+          <figcaption>Final Lab (After)</figcaption>
+        </figure>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Shavonay Morgan. All rights reserved.</p>
+  </footer>
+  <script>
+    function openNav() {
+      document.getElementById("myNav").style.width = "100%";
+    }
+  
+    function closeNav() {
+      document.getElementById("myNav").style.width = "0%";
+    }
+  
+    function toggleDropdown(e) {
+      const content = e.target.nextElementSibling;
+      if (!content.classList.contains("show")) {
+        e.preventDefault();
+        document.querySelectorAll('.dropdown-content').forEach(el => el.classList.remove('show'));
+        content.classList.add("show");
+      }
+    }
+  </script>  
+</body>
+</html>
